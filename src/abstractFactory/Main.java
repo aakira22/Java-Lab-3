@@ -12,13 +12,13 @@ public class Main {
 
     food2.cook();
 
-    AbstractFactory shapeFactory1 = FoodProducer.getFactory(false);
+    AbstractFactory foodFactory1 = FoodProducer.getFactory(false);
 
-    Food food3 = foodFactory.getFood("fish");
+    Food food3 = foodFactory1.getFood("fish");
 
     food3.cook();
 
-    Food food4 = foodFactory.getFood("hotdog");
+    Food food4 = foodFactory1.getFood("hotdog");
 
     food4.cook();
 }
