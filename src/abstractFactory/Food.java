@@ -1,5 +1,5 @@
 package abstractFactory;
 
 public interface Food {
-    void cook(){};
+    void cook();
 }
