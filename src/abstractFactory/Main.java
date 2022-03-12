@@ -1,24 +1,27 @@
 package abstractFactory;
 
 public class Main {
+    public static void main(String[] args) {
 
-    AbstractFactory foodFactory = FoodProducer.getFactory(true);
 
-    Food food1 = foodFactory.getFood("fish");
+        AbstractFactory foodFactory = FoodProducer.getFactory(true);
 
-    food1.cook();
+        Food food1 = foodFactory.getFood("fish");
 
-    Food food2 = foodFactory.getFood("hotdog");
+        food1.cook();
 
-    food2.cook();
+        Food food2 = foodFactory.getFood("hotdog");
 
-    AbstractFactory foodFactory1 = FoodProducer.getFactory(false);
+        food2.cook();
 
-    Food food3 = foodFactory1.getFood("fish");
+        AbstractFactory foodFactory1 = FoodProducer.getFactory(false);
 
-    food3.cook();
+        Food food3 = foodFactory1.getFood("fish");
 
-    Food food4 = foodFactory1.getFood("hotdog");
+        food3.cook();
 
-    food4.cook();
+        Food food4 = foodFactory1.getFood("hotdog");
+
+        food4.cook();
+    }
 }
